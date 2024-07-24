@@ -1,0 +1,15 @@
+* {
+    maRgin : 0;
+}
+html{
+    /* background-color: #14110F; */
+}
+
+div#VectorPlot{
+    /* width: 99vw; */
+    /* height: 50vh; */
+    /* background-color: #14110F; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

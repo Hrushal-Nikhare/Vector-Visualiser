@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.plot.ly/plotly-2.34.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="VectorPlot"></div>
+
+    <!-- Form for adding vectors -->
+    <div>
+        <h2>Add Vector</h2>
+        <label>Start X:</label> <input type="number" id="startX"><br>
+        <label>Start Y:</label> <input type="number" id="startY"><br>
+        <label>Start Z:</label> <input type="number" id="startZ"><br>
+        <label>Direction X:</label> <input type="number" id="dirX"><br>
+        <label>Direction Y:</label> <input type="number" id="dirY"><br>
+        <label>Direction Z:</label> <input type="number" id="dirZ"><br>
+        <button onclick="addVector()">Add Vector</button>
+    </div>
+
+    <!-- Vector list -->
+    <div>
+        <h2>Vectors List</h2>
+        <ul id="vectorList"></ul>
+    </div>
+
+    <div>
+        <h2>Distance and Angle</h2>
+        <p>Distance between vectors: <span id="distanceOutput"></span></p>
+        <p>Angle between vectors (degrees): <span id="angleOutput"></span></p>
+      </div>
+
+<script src="heyy.js"></script>
+</body>
+
+</html>
