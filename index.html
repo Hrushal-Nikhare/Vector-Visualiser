@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vector Visualiser</title>
     <script src="https://cdn.plot.ly/plotly-2.34.0.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="">
 </head>
 
 <body>
@@ -28,13 +29,13 @@
         </div>
         <button onclick="addVector()">Add Vector</button>
     </div>
-    
+
     <!-- Vector list -->
     <div id="VList" class="VList">
         <h2>Vectors List</h2>
         <ul id="vectorList"></ul>
     </div>
-    
+
     <div id="VSel" class="VSel">
         <h2>Select Vectors for Angle Calculation</h2>
         <label>Vector 1:</label>
@@ -46,7 +47,7 @@
             <option value="-1">Select Vector</option>
         </select>
     </div>
-    
+
     <div id="DVec" class="DVec">
         <div>
             <h2>Distance and Angle</h2>
@@ -54,7 +55,7 @@
             <p>Angle between vectors (degrees): <span id="angleOutput"></span></p>
         </div>
     </div>
-    
+
 
     <script src="heyy.js"></script>
 </body>
