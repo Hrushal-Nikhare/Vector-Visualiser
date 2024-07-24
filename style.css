@@ -1,73 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-html{
-    /* background-color: #14110F; */
+html {
     font-family: 'Montserrat', sans-serif;
 }
 
-div#VectorPlot{
-    width: 99vw;
-    height: 50vh;
+.AVec, .VList, .VSel, .DVec {
+    width: 100%; 
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-div{
-    margin: 10px;
+.colwarp {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-direction: column; */
-
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-div.colwarp{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* split into 2 colums */
-    /* flex-direction: row; */
+.colwarp .Col1,
+.colwarp .Col2 {
+    flex: 1;
 }
 
-div.colwarp div{
-    margin: 10px;
-    flex: 50%;
+.colwarp label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-/* digital ocean clutch */
-legend,
-fieldset,
-select,
-textarea,
-input,
+.colwarp input[type="number"] {
+    width: calc(100% - 25px); 
+    margin-bottom: 10px;
+    margin: 15px;
+}
+
 button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-input,
-select,
-textarea {
-  border: 1px solid #333;
-  background-color: white;
-  border-radius: 0.25rem;
-  margin: 10px;
-  font: 1.25rem / 1.5 sans-serif;
-  display: block;
-  box-sizing: border-box;
-  width: 50%;
-  /* padding: 0.5rem 0.75rem; */
-}
-button {
-    font: 1.25rem sans-serif;
-    border-radius: 0.25rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
     cursor: pointer;
-    border: 1px solid #333;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1.25rem;
-  }
+}
+
+.VSel label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.VSel select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.DVec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.DVec div {
+    width: 100%;
+}
+
+.DVec h2 {
+    margin-bottom: 10px;
+}
+
+.DVec p {
+    margin-bottom: 5px;
+}

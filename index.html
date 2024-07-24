@@ -12,30 +12,29 @@
 <body>
     <div id="VectorPlot"></div>
 
-    <!-- Form for adding vectors -->
     <div id="AVec" class="AVec">
         <h2>Add Vector</h2>
         <div class="colwarp">
-        <div class="Col1">
-            <label>Start X:</label> <input type="number" id="startX"><br>
-            <label>Start Y:</label> <input type="number" id="startY"><br>
-            <label>Start Z:</label> <input type="number" id="startZ"><br>
+            <div class="Col1">
+                <label>Start X:</label> <input type="number" id="startX"><br>
+                <label>Start Y:</label> <input type="number" id="startY"><br>
+                <label>Start Z:</label> <input type="number" id="startZ"><br>
+            </div>
+            <div class="Col2">
+                <label>Direction X:</label> <input type="number" id="dirX"><br>
+                <label>Direction Y:</label> <input type="number" id="dirY"><br>
+                <label>Direction Z:</label> <input type="number" id="dirZ"><br>
+            </div>
         </div>
-        <div class="Col2">
-            <label>Direction X:</label> <input type="number" id="dirX"><br>
-            <label>Direction Y:</label> <input type="number" id="dirY"><br>
-            <label>Direction Z:</label> <input type="number" id="dirZ"><br>
-        </div>
-    </div>
         <button onclick="addVector()">Add Vector</button>
     </div>
-
+    
     <!-- Vector list -->
     <div id="VList" class="VList">
         <h2>Vectors List</h2>
         <ul id="vectorList"></ul>
     </div>
-
+    
     <div id="VSel" class="VSel">
         <h2>Select Vectors for Angle Calculation</h2>
         <label>Vector 1:</label>
@@ -47,13 +46,15 @@
             <option value="-1">Select Vector</option>
         </select>
     </div>
-
+    
     <div id="DVec" class="DVec">
-        <h2>Distance and Angle</h2>
-        <br>
-        <p>Distance between vectors: <span id="distanceOutput"></span></p>
-        <p>Angle between vectors (degrees): <span id="angleOutput"></span></p>
+        <div>
+            <h2>Distance and Angle</h2>
+            <p>Distance between vectors: <span id="distanceOutput"></span></p>
+            <p>Angle between vectors (degrees): <span id="angleOutput"></span></p>
+        </div>
     </div>
+    
 
     <script src="heyy.js"></script>
 </body>
