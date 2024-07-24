@@ -31,6 +31,18 @@
     </div>
 
     <div>
+        <h2>Select Vectors for Angle Calculation</h2>
+        <label>Vector 1:</label>
+        <select id="vector1Select" onchange="updateDistanceAndAngle()">
+          <option value="-1">Select Vector</option>
+        </select><br>
+        <label>Vector 2:</label>
+        <select id="vector2Select" onchange="updateDistanceAndAngle()">
+          <option value="-1">Select Vector</option>
+        </select>
+      </div>
+
+    <div>
         <h2>Distance and Angle</h2>
         <p>Distance between vectors: <span id="distanceOutput"></span></p>
         <p>Angle between vectors (degrees): <span id="angleOutput"></span></p>
